@@ -1,0 +1,2147 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:1e300363-a553-4abd-a9e8-a3e5cd7625b2",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-12-02T06:13:11Z",
+    "tools": [
+      {
+        "vendor": "Custom",
+        "name": "Ubuntu SBOM Generator",
+        "version": "1.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:deb/ubuntu/ubuntu-release@18.04?arch=amd64",
+      "type": "operating-system",
+      "name": "Ubuntu",
+      "version": "18.04 LTS (Bionic Beaver)",
+      "purl": "pkg:deb/ubuntu/ubuntu-release@18.04?arch=amd64",
+      "cpe": "cpe:/o:canonical:ubuntu_linux:18.04",
+      "properties": [
+        {
+          "name": "distribution",
+          "value": "Ubuntu 18.04 LTS (Bionic Beaver)"
+        },
+        {
+          "name": "architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "release_date",
+          "value": "2018-04-26"
+        },
+        {
+          "name": "eol_date",
+          "value": "2023-04-01"
+        },
+        {
+          "name": "sbom.origin",
+          "value": "Generated for vulnerability testing - EOL distribution"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:deb/ubuntu/linux-image-generic@4.15.0-213.224?arch=amd64&distro=bionic",
+      "type": "framework",
+      "name": "linux-image-generic",
+      "version": "4.15.0-213.224",
+      "purl": "pkg:deb/ubuntu/linux-image-generic@4.15.0-213.224?arch=amd64&distro=bionic",
+      "description": "Linux kernel image meta-package",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/linux-firmware@1.173.26?arch=amd64&distro=bionic",
+      "type": "framework",
+      "name": "linux-firmware",
+      "version": "1.173.26",
+      "purl": "pkg:deb/ubuntu/linux-firmware@1.173.26?arch=amd64&distro=bionic",
+      "description": "Firmware for Linux kernel drivers",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libc6@2.27-3ubuntu1.6?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libc6",
+      "version": "2.27-3ubuntu1.6",
+      "purl": "pkg:deb/ubuntu/libc6@2.27-3ubuntu1.6?arch=amd64&distro=bionic",
+      "description": "GNU C Library: Shared libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libssl1.1@1.1.0g-2ubuntu4.20?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.0g-2ubuntu4.20",
+      "purl": "pkg:deb/ubuntu/libssl1.1@1.1.0g-2ubuntu4.20?arch=amd64&distro=bionic",
+      "description": "Secure Sockets Layer toolkit - shared libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:openssl:openssl:1.1.0g:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/openssl@1.1.0g-2ubuntu4.20?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.1.0g-2ubuntu4.20",
+      "purl": "pkg:deb/ubuntu/openssl@1.1.0g-2ubuntu4.20?arch=amd64&distro=bionic",
+      "description": "Secure Sockets Layer toolkit - cryptographic utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:openssl:openssl:1.1.0g:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgnutls30@3.5.18-1ubuntu1.6?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libgnutls30",
+      "version": "3.5.18-1ubuntu1.6",
+      "purl": "pkg:deb/ubuntu/libgnutls30@3.5.18-1ubuntu1.6?arch=amd64&distro=bionic",
+      "description": "GNU TLS library - main runtime library",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libcurl4@7.58.0-2ubuntu3.24?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libcurl4",
+      "version": "7.58.0-2ubuntu3.24",
+      "purl": "pkg:deb/ubuntu/libcurl4@7.58.0-2ubuntu3.24?arch=amd64&distro=bionic",
+      "description": "HTTP client library",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:haxx:libcurl:7.58.0:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/curl@7.58.0-2ubuntu3.24?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "curl",
+      "version": "7.58.0-2ubuntu3.24",
+      "purl": "pkg:deb/ubuntu/curl@7.58.0-2ubuntu3.24?arch=amd64&distro=bionic",
+      "description": "HTTP client",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:haxx:curl:7.58.0:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/systemd@237-3ubuntu10.57?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "systemd",
+      "version": "237-3ubuntu10.57",
+      "purl": "pkg:deb/ubuntu/systemd@237-3ubuntu10.57?arch=amd64&distro=bionic",
+      "description": "system and service manager",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:systemd_project:systemd:237:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/dbus@1.12.2-1ubuntu1.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "dbus",
+      "version": "1.12.2-1ubuntu1.4",
+      "purl": "pkg:deb/ubuntu/dbus@1.12.2-1ubuntu1.4?arch=amd64&distro=bionic",
+      "description": "simple interprocess messaging system",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/udev@237-3ubuntu10.57?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "udev",
+      "version": "237-3ubuntu10.57",
+      "purl": "pkg:deb/ubuntu/udev@237-3ubuntu10.57?arch=amd64&distro=bionic",
+      "description": "device event managing daemon",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/bash@4.4.18-2ubuntu1.3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "bash",
+      "version": "4.4.18-2ubuntu1.3",
+      "purl": "pkg:deb/ubuntu/bash@4.4.18-2ubuntu1.3?arch=amd64&distro=bionic",
+      "description": "GNU Bourne Again SHell",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/coreutils@8.28-1ubuntu1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "coreutils",
+      "version": "8.28-1ubuntu1",
+      "purl": "pkg:deb/ubuntu/coreutils@8.28-1ubuntu1?arch=amd64&distro=bionic",
+      "description": "GNU core utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/util-linux@2.31.1-0.4ubuntu3.7?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "util-linux",
+      "version": "2.31.1-0.4ubuntu3.7",
+      "purl": "pkg:deb/ubuntu/util-linux@2.31.1-0.4ubuntu3.7?arch=amd64&distro=bionic",
+      "description": "miscellaneous system utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/grep@3.1-2build1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "grep",
+      "version": "3.1-2build1",
+      "purl": "pkg:deb/ubuntu/grep@3.1-2build1?arch=amd64&distro=bionic",
+      "description": "GNU grep, egrep and fgrep",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/sed@4.4-2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "sed",
+      "version": "4.4-2",
+      "purl": "pkg:deb/ubuntu/sed@4.4-2?arch=amd64&distro=bionic",
+      "description": "GNU stream editor",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/gawk@1:4.1.4+dfsg-1build1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "gawk",
+      "version": "1:4.1.4+dfsg-1build1",
+      "purl": "pkg:deb/ubuntu/gawk@1:4.1.4+dfsg-1build1?arch=amd64&distro=bionic",
+      "description": "GNU awk",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/findutils@4.6.0+git+20170828-2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "findutils",
+      "version": "4.6.0+git+20170828-2",
+      "purl": "pkg:deb/ubuntu/findutils@4.6.0+git+20170828-2?arch=amd64&distro=bionic",
+      "description": "utilities for finding files",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/apt@1.6.14?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "apt",
+      "version": "1.6.14",
+      "purl": "pkg:deb/ubuntu/apt@1.6.14?arch=amd64&distro=bionic",
+      "description": "commandline package manager",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/dpkg@1.19.0.5ubuntu2.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "dpkg",
+      "version": "1.19.0.5ubuntu2.4",
+      "purl": "pkg:deb/ubuntu/dpkg@1.19.0.5ubuntu2.4?arch=amd64&distro=bionic",
+      "description": "Debian package management system",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/gzip@1.6-5ubuntu1.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "gzip",
+      "version": "1.6-5ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/gzip@1.6-5ubuntu1.2?arch=amd64&distro=bionic",
+      "description": "GNU compression utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/bzip2@1.0.6-8.1ubuntu0.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "bzip2",
+      "version": "1.0.6-8.1ubuntu0.2",
+      "purl": "pkg:deb/ubuntu/bzip2@1.0.6-8.1ubuntu0.2?arch=amd64&distro=bionic",
+      "description": "high-quality block-sorting file compressor",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/xz-utils@5.2.2-1.3ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "xz-utils",
+      "version": "5.2.2-1.3ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/xz-utils@5.2.2-1.3ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "XZ-format compression utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/tar@1.29b-2ubuntu0.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "tar",
+      "version": "1.29b-2ubuntu0.4",
+      "purl": "pkg:deb/ubuntu/tar@1.29b-2ubuntu0.4?arch=amd64&distro=bionic",
+      "description": "GNU version of the tar archiving utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/vim-tiny@2:8.0.1453-1ubuntu1.13?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "vim-tiny",
+      "version": "2:8.0.1453-1ubuntu1.13",
+      "purl": "pkg:deb/ubuntu/vim-tiny@2:8.0.1453-1ubuntu1.13?arch=amd64&distro=bionic",
+      "description": "Vi IMproved - enhanced vi editor - compact version",
+      "licenses": [
+        {
+          "license": {
+            "id": "Vim"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/nano@2.9.3-2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "nano",
+      "version": "2.9.3-2",
+      "purl": "pkg:deb/ubuntu/nano@2.9.3-2?arch=amd64&distro=bionic",
+      "description": "small, friendly text editor",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/less@487-0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "less",
+      "version": "487-0.1",
+      "purl": "pkg:deb/ubuntu/less@487-0.1?arch=amd64&distro=bionic",
+      "description": "pager program similar to more",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/openssh-server@1:7.6p1-4ubuntu0.7?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "openssh-server",
+      "version": "1:7.6p1-4ubuntu0.7",
+      "purl": "pkg:deb/ubuntu/openssh-server@1:7.6p1-4ubuntu0.7?arch=amd64&distro=bionic",
+      "description": "secure shell (SSH) server",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:openbsd:openssh:7.6p1:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/openssh-client@1:7.6p1-4ubuntu0.7?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "openssh-client",
+      "version": "1:7.6p1-4ubuntu0.7",
+      "purl": "pkg:deb/ubuntu/openssh-client@1:7.6p1-4ubuntu0.7?arch=amd64&distro=bionic",
+      "description": "secure shell (SSH) client",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:openbsd:openssh:7.6p1:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/net-tools@1.60+git20161116.90da8a0-1ubuntu1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "net-tools",
+      "version": "1.60+git20161116.90da8a0-1ubuntu1",
+      "purl": "pkg:deb/ubuntu/net-tools@1.60+git20161116.90da8a0-1ubuntu1?arch=amd64&distro=bionic",
+      "description": "NET-3 networking toolkit",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/iproute2@4.15.0-2ubuntu1.3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "iproute2",
+      "version": "4.15.0-2ubuntu1.3",
+      "purl": "pkg:deb/ubuntu/iproute2@4.15.0-2ubuntu1.3?arch=amd64&distro=bionic",
+      "description": "networking and traffic control tools",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/iputils-ping@3:20161105-1ubuntu3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "iputils-ping",
+      "version": "3:20161105-1ubuntu3",
+      "purl": "pkg:deb/ubuntu/iputils-ping@3:20161105-1ubuntu3?arch=amd64&distro=bionic",
+      "description": "Tools to test the reachability of network hosts",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/wget@1.19.4-1ubuntu2.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "wget",
+      "version": "1.19.4-1ubuntu2.2",
+      "purl": "pkg:deb/ubuntu/wget@1.19.4-1ubuntu2.2?arch=amd64&distro=bionic",
+      "description": "retrieves files from the web",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/ca-certificates@20211016ubuntu0.18.04.1?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20211016ubuntu0.18.04.1",
+      "purl": "pkg:deb/ubuntu/ca-certificates@20211016ubuntu0.18.04.1?arch=amd64&distro=bionic",
+      "description": "Common CA certificates",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/gcc@4:7.4.0-1ubuntu2.3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "gcc",
+      "version": "4:7.4.0-1ubuntu2.3",
+      "purl": "pkg:deb/ubuntu/gcc@4:7.4.0-1ubuntu2.3?arch=amd64&distro=bionic",
+      "description": "GNU C compiler",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/g++@4:7.4.0-1ubuntu2.3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "g++",
+      "version": "4:7.4.0-1ubuntu2.3",
+      "purl": "pkg:deb/ubuntu/g++@4:7.4.0-1ubuntu2.3?arch=amd64&distro=bionic",
+      "description": "GNU C++ compiler",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/make@4.1-9.1ubuntu1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "make",
+      "version": "4.1-9.1ubuntu1",
+      "purl": "pkg:deb/ubuntu/make@4.1-9.1ubuntu1?arch=amd64&distro=bionic",
+      "description": "GNU make utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/binutils@2.30-21ubuntu1~18.04.9?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "binutils",
+      "version": "2.30-21ubuntu1~18.04.9",
+      "purl": "pkg:deb/ubuntu/binutils@2.30-21ubuntu1~18.04.9?arch=amd64&distro=bionic",
+      "description": "GNU assembler, linker and binary utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libc6-dev@2.27-3ubuntu1.6?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libc6-dev",
+      "version": "2.27-3ubuntu1.6",
+      "purl": "pkg:deb/ubuntu/libc6-dev@2.27-3ubuntu1.6?arch=amd64&distro=bionic",
+      "description": "GNU C Library: Development Libraries and Header Files",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/python2.7@2.7.17-1~18.04ubuntu1.13?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "python2.7",
+      "version": "2.7.17-1~18.04ubuntu1.13",
+      "purl": "pkg:deb/ubuntu/python2.7@2.7.17-1~18.04ubuntu1.13?arch=amd64&distro=bionic",
+      "description": "Interactive high-level object-oriented language (version 2.7)",
+      "licenses": [
+        {
+          "license": {
+            "id": "Python-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:python:python:2.7.17:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/python3.6@3.6.9-1~18.04ubuntu1.13?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "python3.6",
+      "version": "3.6.9-1~18.04ubuntu1.13",
+      "purl": "pkg:deb/ubuntu/python3.6@3.6.9-1~18.04ubuntu1.13?arch=amd64&distro=bionic",
+      "description": "Interactive high-level object-oriented language (version 3.6)",
+      "licenses": [
+        {
+          "license": {
+            "id": "Python-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:python:python:3.6.9:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/python3-pip@9.0.1-2.3~ubuntu1.18.04.8?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "python3-pip",
+      "version": "9.0.1-2.3~ubuntu1.18.04.8",
+      "purl": "pkg:deb/ubuntu/python3-pip@9.0.1-2.3~ubuntu1.18.04.8?arch=amd64&distro=bionic",
+      "description": "Python package installer",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/perl@5.26.1-6ubuntu0.7?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "perl",
+      "version": "5.26.1-6ubuntu0.7",
+      "purl": "pkg:deb/ubuntu/perl@5.26.1-6ubuntu0.7?arch=amd64&distro=bionic",
+      "description": "Larry Wall's Practical Extraction and Report Language",
+      "licenses": [
+        {
+          "license": {
+            "id": "Artistic-1.0-Perl"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/perl-base@5.26.1-6ubuntu0.7?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "perl-base",
+      "version": "5.26.1-6ubuntu0.7",
+      "purl": "pkg:deb/ubuntu/perl-base@5.26.1-6ubuntu0.7?arch=amd64&distro=bionic",
+      "description": "minimal Perl system",
+      "licenses": [
+        {
+          "license": {
+            "id": "Artistic-1.0-Perl"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/apache2@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "apache2",
+      "version": "2.4.29-1ubuntu4.27",
+      "purl": "pkg:deb/ubuntu/apache2@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "description": "Apache HTTP Server",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:apache:http_server:2.4.29:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/nginx@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "nginx",
+      "version": "1.14.0-0ubuntu1.11",
+      "purl": "pkg:deb/ubuntu/nginx@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+      "description": "small, powerful, scalable web/proxy server",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:f5:nginx:1.14.0:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libxml2@2.9.4+dfsg1-6.1ubuntu1.9?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libxml2",
+      "version": "2.9.4+dfsg1-6.1ubuntu1.9",
+      "purl": "pkg:deb/ubuntu/libxml2@2.9.4+dfsg1-6.1ubuntu1.9?arch=amd64&distro=bionic",
+      "description": "GNOME XML library",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ],
+      "cpe": "cpe:2.3:a:xmlsoft:libxml2:2.9.4:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libexpat1@2.2.5-3ubuntu0.7?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libexpat1",
+      "version": "2.2.5-3ubuntu0.7",
+      "purl": "pkg:deb/ubuntu/libexpat1@2.2.5-3ubuntu0.7?arch=amd64&distro=bionic",
+      "description": "XML parsing C library - runtime library",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libsqlite3-0@3.22.0-1ubuntu0.7?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libsqlite3-0",
+      "version": "3.22.0-1ubuntu0.7",
+      "purl": "pkg:deb/ubuntu/libsqlite3-0@3.22.0-1ubuntu0.7?arch=amd64&distro=bionic",
+      "description": "SQLite 3 shared library",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpng16-16@1.6.34-1ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libpng16-16",
+      "version": "1.6.34-1ubuntu0.18.04.2",
+      "purl": "pkg:deb/ubuntu/libpng16-16@1.6.34-1ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "description": "PNG library - runtime (version 1.6)",
+      "licenses": [
+        {
+          "license": {
+            "id": "Libpng"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libjpeg-turbo8@1.5.2-0ubuntu5.18.04.6?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libjpeg-turbo8",
+      "version": "1.5.2-0ubuntu5.18.04.6",
+      "purl": "pkg:deb/ubuntu/libjpeg-turbo8@1.5.2-0ubuntu5.18.04.6?arch=amd64&distro=bionic",
+      "description": "libjpeg-turbo JPEG runtime library",
+      "licenses": [
+        {
+          "license": {
+            "id": "IJG"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libtiff5@4.0.9-5ubuntu0.10?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libtiff5",
+      "version": "4.0.9-5ubuntu0.10",
+      "purl": "pkg:deb/ubuntu/libtiff5@4.0.9-5ubuntu0.10?arch=amd64&distro=bionic",
+      "description": "Tag Image File Format (TIFF) library",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgcrypt20@1.8.1-4ubuntu1.3?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libgcrypt20",
+      "version": "1.8.1-4ubuntu1.3",
+      "purl": "pkg:deb/ubuntu/libgcrypt20@1.8.1-4ubuntu1.3?arch=amd64&distro=bionic",
+      "description": "LGPL Crypto library - runtime library",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgpg-error0@1.27-6?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libgpg-error0",
+      "version": "1.27-6",
+      "purl": "pkg:deb/ubuntu/libgpg-error0@1.27-6?arch=amd64&distro=bionic",
+      "description": "library for common error values and messages in GnuPG components",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpcre3@2:8.39-9ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libpcre3",
+      "version": "2:8.39-9ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-9ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "Old Perl 5 Compatible Regular Expression Library - runtime files",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/zlib1g@1:1.2.11.dfsg-0ubuntu2.2?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "zlib1g",
+      "version": "1:1.2.11.dfsg-0ubuntu2.2",
+      "purl": "pkg:deb/ubuntu/zlib1g@1:1.2.11.dfsg-0ubuntu2.2?arch=amd64&distro=bionic",
+      "description": "compression library - runtime",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/liblzma5@5.2.2-1.3ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "liblzma5",
+      "version": "5.2.2-1.3ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/liblzma5@5.2.2-1.3ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "XZ-format compression library",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libbz2-1.0@1.0.6-8.1ubuntu0.2?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libbz2-1.0",
+      "version": "1.0.6-8.1ubuntu0.2",
+      "purl": "pkg:deb/ubuntu/libbz2-1.0@1.0.6-8.1ubuntu0.2?arch=amd64&distro=bionic",
+      "description": "high-quality block-sorting file compressor library - runtime",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/gnupg@2.2.4-1ubuntu1.6?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "gnupg",
+      "version": "2.2.4-1ubuntu1.6",
+      "purl": "pkg:deb/ubuntu/gnupg@2.2.4-1ubuntu1.6?arch=amd64&distro=bionic",
+      "description": "GNU privacy guard - a free PGP replacement",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/sudo@1.8.21p2-3ubuntu1.5?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "sudo",
+      "version": "1.8.21p2-3ubuntu1.5",
+      "purl": "pkg:deb/ubuntu/sudo@1.8.21p2-3ubuntu1.5?arch=amd64&distro=bionic",
+      "description": "Provide limited super user privileges to specific users",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/rsync@3.1.2-2.1ubuntu1.6?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "rsync",
+      "version": "3.1.2-2.1ubuntu1.6",
+      "purl": "pkg:deb/ubuntu/rsync@3.1.2-2.1ubuntu1.6?arch=amd64&distro=bionic",
+      "description": "fast, versatile, remote (and local) file-copying tool",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/screen@4.6.2-1ubuntu1.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "screen",
+      "version": "4.6.2-1ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/screen@4.6.2-1ubuntu1.1?arch=amd64&distro=bionic",
+      "description": "terminal multiplexer with VT100/ANSI terminal emulation",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/tmux@2.6-3ubuntu0.3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "tmux",
+      "version": "2.6-3ubuntu0.3",
+      "purl": "pkg:deb/ubuntu/tmux@2.6-3ubuntu0.3?arch=amd64&distro=bionic",
+      "description": "terminal multiplexer",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/file@1:5.32-2ubuntu0.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "file",
+      "version": "1:5.32-2ubuntu0.4",
+      "purl": "pkg:deb/ubuntu/file@1:5.32-2ubuntu0.4?arch=amd64&distro=bionic",
+      "description": "Recognize the type of data in a file",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/lsof@4.89+dfsg-0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "lsof",
+      "version": "4.89+dfsg-0.1",
+      "purl": "pkg:deb/ubuntu/lsof@4.89+dfsg-0.1?arch=amd64&distro=bionic",
+      "description": "utility to list open files",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/strace@4.21-1ubuntu1.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "strace",
+      "version": "4.21-1ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/strace@4.21-1ubuntu1.1?arch=amd64&distro=bionic",
+      "description": "System call tracer",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/gdb@8.1.1-0ubuntu1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "gdb",
+      "version": "8.1.1-0ubuntu1",
+      "purl": "pkg:deb/ubuntu/gdb@8.1.1-0ubuntu1?arch=amd64&distro=bionic",
+      "description": "GNU Debugger",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/e2fsprogs@1.44.1-1ubuntu1.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "e2fsprogs",
+      "version": "1.44.1-1ubuntu1.4",
+      "purl": "pkg:deb/ubuntu/e2fsprogs@1.44.1-1ubuntu1.4?arch=amd64&distro=bionic",
+      "description": "ext2/ext3/ext4 file system utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/xfsprogs@4.9.0+nmu1ubuntu2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "xfsprogs",
+      "version": "4.9.0+nmu1ubuntu2",
+      "purl": "pkg:deb/ubuntu/xfsprogs@4.9.0+nmu1ubuntu2?arch=amd64&distro=bionic",
+      "description": "Utilities for managing the XFS filesystem",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/procps@2:3.3.12-3ubuntu1.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "procps",
+      "version": "2:3.3.12-3ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/procps@2:3.3.12-3ubuntu1.2?arch=amd64&distro=bionic",
+      "description": "/proc file system utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/psmisc@23.1-1ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "psmisc",
+      "version": "23.1-1ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/psmisc@23.1-1ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "utilities that use the proc file system",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/init-system-helpers@1.51?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "init-system-helpers",
+      "version": "1.51",
+      "purl": "pkg:deb/ubuntu/init-system-helpers@1.51?arch=amd64&distro=bionic",
+      "description": "helper tools for all init systems",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/sysvinit-utils@2.88dsf-59.10ubuntu1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "sysvinit-utils",
+      "version": "2.88dsf-59.10ubuntu1",
+      "purl": "pkg:deb/ubuntu/sysvinit-utils@2.88dsf-59.10ubuntu1?arch=amd64&distro=bionic",
+      "description": "System-V-like utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/rsyslog@8.32.0-1ubuntu4.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "rsyslog",
+      "version": "8.32.0-1ubuntu4.2",
+      "purl": "pkg:deb/ubuntu/rsyslog@8.32.0-1ubuntu4.2?arch=amd64&distro=bionic",
+      "description": "reliable system and kernel logging daemon",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/logrotate@3.11.0-0.1ubuntu1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "logrotate",
+      "version": "3.11.0-0.1ubuntu1",
+      "purl": "pkg:deb/ubuntu/logrotate@3.11.0-0.1ubuntu1?arch=amd64&distro=bionic",
+      "description": "Log rotation utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/ntp@1:4.2.8p10+dfsg-5ubuntu7.3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "ntp",
+      "version": "1:4.2.8p10+dfsg-5ubuntu7.3",
+      "purl": "pkg:deb/ubuntu/ntp@1:4.2.8p10+dfsg-5ubuntu7.3?arch=amd64&distro=bionic",
+      "description": "Network Time Protocol daemon",
+      "licenses": [
+        {
+          "license": {
+            "id": "NTP"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/cron@3.0pl1-128.1ubuntu1.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "cron",
+      "version": "3.0pl1-128.1ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/cron@3.0pl1-128.1ubuntu1.2?arch=amd64&distro=bionic",
+      "description": "process scheduling daemon",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/at@3.1.20-3.1ubuntu2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "at",
+      "version": "3.1.20-3.1ubuntu2",
+      "purl": "pkg:deb/ubuntu/at@3.1.20-3.1ubuntu2?arch=amd64&distro=bionic",
+      "description": "Delayed job execution and batch processing",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/acl@2.2.52-3build1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "acl",
+      "version": "2.2.52-3build1",
+      "purl": "pkg:deb/ubuntu/acl@2.2.52-3build1?arch=amd64&distro=bionic",
+      "description": "Access control list utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/attr@1:2.4.47-2build1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "attr",
+      "version": "1:2.4.47-2build1",
+      "purl": "pkg:deb/ubuntu/attr@1:2.4.47-2build1?arch=amd64&distro=bionic",
+      "description": "Utilities for manipulating filesystem extended attributes",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:deb/ubuntu/ubuntu-release@18.04?arch=amd64",
+      "dependsOn": [
+        "pkg:deb/ubuntu/linux-image-generic@4.15.0-213.224?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/linux-firmware@1.173.26?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libc6@2.27-3ubuntu1.6?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libssl1.1@1.1.0g-2ubuntu4.20?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/openssl@1.1.0g-2ubuntu4.20?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libgnutls30@3.5.18-1ubuntu1.6?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libcurl4@7.58.0-2ubuntu3.24?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/curl@7.58.0-2ubuntu3.24?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/systemd@237-3ubuntu10.57?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/dbus@1.12.2-1ubuntu1.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/udev@237-3ubuntu10.57?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/bash@4.4.18-2ubuntu1.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/coreutils@8.28-1ubuntu1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/util-linux@2.31.1-0.4ubuntu3.7?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/grep@3.1-2build1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/sed@4.4-2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/gawk@1:4.1.4+dfsg-1build1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/findutils@4.6.0+git+20170828-2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/apt@1.6.14?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/dpkg@1.19.0.5ubuntu2.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/gzip@1.6-5ubuntu1.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/bzip2@1.0.6-8.1ubuntu0.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/xz-utils@5.2.2-1.3ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/tar@1.29b-2ubuntu0.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/vim-tiny@2:8.0.1453-1ubuntu1.13?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/nano@2.9.3-2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/less@487-0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/openssh-server@1:7.6p1-4ubuntu0.7?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/openssh-client@1:7.6p1-4ubuntu0.7?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/net-tools@1.60+git20161116.90da8a0-1ubuntu1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/iproute2@4.15.0-2ubuntu1.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/iputils-ping@3:20161105-1ubuntu3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/wget@1.19.4-1ubuntu2.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/ca-certificates@20211016ubuntu0.18.04.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/gcc@4:7.4.0-1ubuntu2.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/g++@4:7.4.0-1ubuntu2.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/make@4.1-9.1ubuntu1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/binutils@2.30-21ubuntu1~18.04.9?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libc6-dev@2.27-3ubuntu1.6?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/python2.7@2.7.17-1~18.04ubuntu1.13?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/python3.6@3.6.9-1~18.04ubuntu1.13?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/python3-pip@9.0.1-2.3~ubuntu1.18.04.8?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/perl@5.26.1-6ubuntu0.7?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/perl-base@5.26.1-6ubuntu0.7?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/apache2@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/nginx@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libxml2@2.9.4+dfsg1-6.1ubuntu1.9?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libexpat1@2.2.5-3ubuntu0.7?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libsqlite3-0@3.22.0-1ubuntu0.7?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libpng16-16@1.6.34-1ubuntu0.18.04.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libjpeg-turbo8@1.5.2-0ubuntu5.18.04.6?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libtiff5@4.0.9-5ubuntu0.10?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libgcrypt20@1.8.1-4ubuntu1.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libgpg-error0@1.27-6?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libpcre3@2:8.39-9ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/zlib1g@1:1.2.11.dfsg-0ubuntu2.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/liblzma5@5.2.2-1.3ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libbz2-1.0@1.0.6-8.1ubuntu0.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/gnupg@2.2.4-1ubuntu1.6?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/sudo@1.8.21p2-3ubuntu1.5?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/rsync@3.1.2-2.1ubuntu1.6?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/screen@4.6.2-1ubuntu1.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/tmux@2.6-3ubuntu0.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/file@1:5.32-2ubuntu0.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/lsof@4.89+dfsg-0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/strace@4.21-1ubuntu1.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/gdb@8.1.1-0ubuntu1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/e2fsprogs@1.44.1-1ubuntu1.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/xfsprogs@4.9.0+nmu1ubuntu2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/procps@2:3.3.12-3ubuntu1.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/psmisc@23.1-1ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/init-system-helpers@1.51?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/sysvinit-utils@2.88dsf-59.10ubuntu1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/rsyslog@8.32.0-1ubuntu4.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/logrotate@3.11.0-0.1ubuntu1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/ntp@1:4.2.8p10+dfsg-5ubuntu7.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/cron@3.0pl1-128.1ubuntu1.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/at@3.1.20-3.1ubuntu2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/acl@2.2.52-3build1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/attr@1:2.4.47-2build1?arch=amd64&distro=bionic"
+      ]
+    }
+  ]
+}

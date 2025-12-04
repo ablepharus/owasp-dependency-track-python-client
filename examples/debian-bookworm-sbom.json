@@ -1,0 +1,221 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:ca5947e0-ddd1-4378-a020-f1498f289beb",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-12-02T03:44:21Z",
+    "tools": [
+      {
+        "vendor": "Custom",
+        "name": "Manual SBOM Builder",
+        "version": "1.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:deb/debian/debian-release@12?arch=amd64",
+      "type": "operating-system",
+      "name": "Debian GNU/Linux",
+      "version": "12 (bookworm)",
+      "purl": "pkg:deb/debian/debian-release@12?arch=amd64",
+      "cpe": "cpe:/o:debian:debian_linux:12",
+      "properties": [
+        {
+          "name": "distribution",
+          "value": "Debian GNU/Linux 12 (bookworm)"
+        },
+        {
+          "name": "architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "sbom.origin",
+          "value": "Constructed from packages.debian.org metadata on 2025-12-02"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:deb/debian/linux-image-amd64@6.1.158-1?arch=amd64",
+      "type": "framework",
+      "name": "linux-image-amd64",
+      "version": "6.1.158-1",
+      "purl": "pkg:deb/debian/linux-image-amd64@6.1.158-1?arch=amd64",
+      "description": "Meta package for the Debian Linux 6.1 kernel series on amd64",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:url",
+          "value": "https://packages.debian.org/bookworm/linux-image-amd64"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://packages.debian.org/bookworm/linux-image-amd64",
+          "comment": "Debian package metadata"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/systemd@252.39-1~deb12u1?arch=amd64",
+      "type": "application",
+      "name": "systemd",
+      "version": "252.39-1~deb12u1",
+      "purl": "pkg:deb/debian/systemd@252.39-1~deb12u1?arch=amd64",
+      "description": "System and service manager",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:url",
+          "value": "https://packages.debian.org/bookworm/systemd"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://packages.debian.org/bookworm/systemd",
+          "comment": "Debian package metadata"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssl@3.0.17-1~deb12u3?arch=amd64",
+      "type": "library",
+      "name": "openssl",
+      "version": "3.0.17-1~deb12u3",
+      "purl": "pkg:deb/debian/openssl@3.0.17-1~deb12u3?arch=amd64",
+      "description": "Secure Sockets Layer toolkit - cryptographic utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:url",
+          "value": "https://packages.debian.org/bookworm/openssl"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://packages.debian.org/bookworm/openssl",
+          "comment": "Debian package metadata"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bash@5.2.15-2?arch=amd64",
+      "type": "application",
+      "name": "bash",
+      "version": "5.2.15-2",
+      "purl": "pkg:deb/debian/bash@5.2.15-2?arch=amd64",
+      "description": "GNU Bourne Again SHell",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:url",
+          "value": "https://packages.debian.org/bookworm/bash"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://packages.debian.org/bookworm/bash",
+          "comment": "Debian package metadata"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/coreutils@9.1-1?arch=amd64",
+      "type": "application",
+      "name": "coreutils",
+      "version": "9.1-1",
+      "purl": "pkg:deb/debian/coreutils@9.1-1?arch=amd64",
+      "description": "GNU core utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:url",
+          "value": "https://packages.debian.org/bookworm/coreutils"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://packages.debian.org/bookworm/coreutils",
+          "comment": "Debian package metadata"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6@2.36-9+deb12u13?arch=amd64",
+      "type": "library",
+      "name": "libc6",
+      "version": "2.36-9+deb12u13",
+      "purl": "pkg:deb/debian/libc6@2.36-9+deb12u13?arch=amd64",
+      "description": "GNU C Library: Shared libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:url",
+          "value": "https://packages.debian.org/bookworm/libc6"
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://packages.debian.org/bookworm/libc6",
+          "comment": "Debian package metadata"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:deb/debian/debian-release@12?arch=amd64",
+      "dependsOn": [
+        "pkg:deb/debian/linux-image-amd64@6.1.158-1?arch=amd64",
+        "pkg:deb/debian/systemd@252.39-1~deb12u1?arch=amd64",
+        "pkg:deb/debian/openssl@3.0.17-1~deb12u3?arch=amd64",
+        "pkg:deb/debian/bash@5.2.15-2?arch=amd64",
+        "pkg:deb/debian/coreutils@9.1-1?arch=amd64",
+        "pkg:deb/debian/libc6@2.36-9+deb12u13?arch=amd64"
+      ]
+    }
+  ]
+}

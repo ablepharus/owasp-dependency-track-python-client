@@ -1,0 +1,2166 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:6b3cb260-ef4a-4250-b7aa-c3676145d21c",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-12-02T06:15:34Z",
+    "tools": [
+      {
+        "vendor": "Custom",
+        "name": "Ubuntu SBOM Generator",
+        "version": "1.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:deb/ubuntu/ubuntu-release@18.04?arch=amd64&profile=server",
+      "type": "operating-system",
+      "name": "Ubuntu Server Stack",
+      "version": "18.04 LTS (Bionic Beaver)",
+      "purl": "pkg:deb/ubuntu/ubuntu-release@18.04?arch=amd64&profile=server",
+      "cpe": "cpe:/o:canonical:ubuntu_linux:18.04",
+      "properties": [
+        {
+          "name": "distribution",
+          "value": "Ubuntu 18.04 LTS (Bionic Beaver)"
+        },
+        {
+          "name": "architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "profile",
+          "value": "web-database-server"
+        },
+        {
+          "name": "release_date",
+          "value": "2018-04-26"
+        },
+        {
+          "name": "eol_date",
+          "value": "2023-04-01"
+        },
+        {
+          "name": "sbom.origin",
+          "value": "Generated for vulnerability testing - EOL distribution"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:deb/ubuntu/apache2@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "apache2",
+      "version": "2.4.29-1ubuntu4.27",
+      "purl": "pkg:deb/ubuntu/apache2@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "description": "Apache HTTP Server",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ],
+      "cpe": "cpe:2.3:a:apache:http_server:2.4.29:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/apache2-bin@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "apache2-bin",
+      "version": "2.4.29-1ubuntu4.27",
+      "purl": "pkg:deb/ubuntu/apache2-bin@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "description": "Apache HTTP Server (modules and other binary files)",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/apache2-data@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "apache2-data",
+      "version": "2.4.29-1ubuntu4.27",
+      "purl": "pkg:deb/ubuntu/apache2-data@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "description": "Apache HTTP Server (common files)",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/apache2-utils@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "apache2-utils",
+      "version": "2.4.29-1ubuntu4.27",
+      "purl": "pkg:deb/ubuntu/apache2-utils@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+      "description": "Apache HTTP Server (utility programs for web servers)",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/nginx@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "nginx",
+      "version": "1.14.0-0ubuntu1.11",
+      "purl": "pkg:deb/ubuntu/nginx@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+      "description": "small, powerful, scalable web/proxy server",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ],
+      "cpe": "cpe:2.3:a:f5:nginx:1.14.0:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/nginx-common@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "nginx-common",
+      "version": "1.14.0-0ubuntu1.11",
+      "purl": "pkg:deb/ubuntu/nginx-common@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+      "description": "small, powerful, scalable web/proxy server - common files",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libapache2-mod-php7.2@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libapache2-mod-php7.2",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/libapache2-mod-php7.2@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "server-side, HTML-embedded scripting language (Apache 2 module)",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libapache2-mod-security2@2.9.2-1ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libapache2-mod-security2",
+      "version": "2.9.2-1ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libapache2-mod-security2@2.9.2-1ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "Tighten web applications security for Apache",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libapache2-mod-wsgi-py3@4.5.17-1ubuntu1?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libapache2-mod-wsgi-py3",
+      "version": "4.5.17-1ubuntu1",
+      "purl": "pkg:deb/ubuntu/libapache2-mod-wsgi-py3@4.5.17-1ubuntu1?arch=amd64&distro=bionic",
+      "description": "Python 3 WSGI adapter module for Apache",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "php7.2",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "server-side, HTML-embedded scripting language (metapackage)",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ],
+      "cpe": "cpe:2.3:a:php:php:7.2.24:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-cli@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "php7.2-cli",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-cli@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "command-line interpreter for the PHP scripting language",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-common@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-common",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-common@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "documentation, examples and common module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-fpm@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "php7.2-fpm",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-fpm@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "server-side, HTML-embedded scripting language (FPM-CGI binary)",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-mysql@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-mysql",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-mysql@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "MySQL module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-pgsql@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-pgsql",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-pgsql@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "PostgreSQL module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-sqlite3@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-sqlite3",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-sqlite3@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "SQLite3 module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-curl@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-curl",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-curl@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "CURL module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-gd@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-gd",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-gd@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "GD module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-mbstring@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-mbstring",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-mbstring@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "MBSTRING module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-xml@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-xml",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-xml@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "DOM, SimpleXML, WDDX, XML, and XSL module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-zip@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-zip",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-zip@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "Zip module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-json@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-json",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-json@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "JSON module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-opcache@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-opcache",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-opcache@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "Zend OpCache module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/php7.2-readline@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "php7.2-readline",
+      "version": "7.2.24-0ubuntu0.18.04.17",
+      "purl": "pkg:deb/ubuntu/php7.2-readline@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+      "description": "readline module for PHP",
+      "licenses": [
+        {
+          "license": {
+            "id": "PHP-3.01"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/mysql-server-5.7@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "mysql-server-5.7",
+      "version": "5.7.44-0ubuntu0.18.04.1",
+      "purl": "pkg:deb/ubuntu/mysql-server-5.7@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+      "description": "MySQL database server binaries and system database setup",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ],
+      "cpe": "cpe:2.3:a:oracle:mysql:5.7.44:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/mysql-client-5.7@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "mysql-client-5.7",
+      "version": "5.7.44-0ubuntu0.18.04.1",
+      "purl": "pkg:deb/ubuntu/mysql-client-5.7@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+      "description": "MySQL database client binaries",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/mysql-common@5.8+1.0.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "mysql-common",
+      "version": "5.8+1.0.4",
+      "purl": "pkg:deb/ubuntu/mysql-common@5.8+1.0.4?arch=amd64&distro=bionic",
+      "description": "MySQL database common files",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libmysqlclient20@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libmysqlclient20",
+      "version": "5.7.44-0ubuntu0.18.04.1",
+      "purl": "pkg:deb/ubuntu/libmysqlclient20@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+      "description": "MySQL database client library",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/postgresql-10@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "postgresql-10",
+      "version": "10.23-0ubuntu0.18.04.2",
+      "purl": "pkg:deb/ubuntu/postgresql-10@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "description": "object-relational SQL database, version 10 server",
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ],
+      "cpe": "cpe:2.3:a:postgresql:postgresql:10.23:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/postgresql-client-10@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "postgresql-client-10",
+      "version": "10.23-0ubuntu0.18.04.2",
+      "purl": "pkg:deb/ubuntu/postgresql-client-10@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "description": "front-end programs for PostgreSQL 10",
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/postgresql-common@190ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "postgresql-common",
+      "version": "190ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/postgresql-common@190ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "PostgreSQL database-cluster manager",
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpq5@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libpq5",
+      "version": "10.23-0ubuntu0.18.04.2",
+      "purl": "pkg:deb/ubuntu/libpq5@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "description": "PostgreSQL C client library",
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/redis-server@5:4.0.9-1ubuntu0.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "redis-server",
+      "version": "5:4.0.9-1ubuntu0.2",
+      "purl": "pkg:deb/ubuntu/redis-server@5:4.0.9-1ubuntu0.2?arch=amd64&distro=bionic",
+      "description": "Persistent key-value database with network interface",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ],
+      "cpe": "cpe:2.3:a:redis:redis:4.0.9:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/redis-tools@5:4.0.9-1ubuntu0.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "redis-tools",
+      "version": "5:4.0.9-1ubuntu0.2",
+      "purl": "pkg:deb/ubuntu/redis-tools@5:4.0.9-1ubuntu0.2?arch=amd64&distro=bionic",
+      "description": "Persistent key-value database with network interface (client)",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/memcached@1.5.6-0ubuntu1.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "memcached",
+      "version": "1.5.6-0ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/memcached@1.5.6-0ubuntu1.2?arch=amd64&distro=bionic",
+      "description": "high-performance memory object caching system",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libmemcached11@1.0.18-4.2ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "libmemcached11",
+      "version": "1.0.18-4.2ubuntu0.18.04.2",
+      "purl": "pkg:deb/ubuntu/libmemcached11@1.0.18-4.2ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "description": "C and C++ client library to the memcached server",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/mongodb@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "mongodb",
+      "version": "1:3.6.3-0ubuntu1.4",
+      "purl": "pkg:deb/ubuntu/mongodb@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+      "description": "object/document-oriented database (metapackage)",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/mongodb-server@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "mongodb-server",
+      "version": "1:3.6.3-0ubuntu1.4",
+      "purl": "pkg:deb/ubuntu/mongodb-server@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+      "description": "object/document-oriented database (server package)",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/mongodb-clients@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "mongodb-clients",
+      "version": "1:3.6.3-0ubuntu1.4",
+      "purl": "pkg:deb/ubuntu/mongodb-clients@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+      "description": "object/document-oriented database (client apps)",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/elasticsearch@6.8.23?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "elasticsearch",
+      "version": "6.8.23",
+      "purl": "pkg:deb/ubuntu/elasticsearch@6.8.23?arch=amd64&distro=bionic",
+      "description": "Open Source, Distributed, RESTful Search Engine",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/rabbitmq-server@3.6.10-1ubuntu0.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "rabbitmq-server",
+      "version": "3.6.10-1ubuntu0.2",
+      "purl": "pkg:deb/ubuntu/rabbitmq-server@3.6.10-1ubuntu0.2?arch=amd64&distro=bionic",
+      "description": "AMQP server written in Erlang",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/haproxy@1.8.8-1ubuntu0.13?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "haproxy",
+      "version": "1.8.8-1ubuntu0.13",
+      "purl": "pkg:deb/ubuntu/haproxy@1.8.8-1ubuntu0.13?arch=amd64&distro=bionic",
+      "description": "fast and reliable load balancing reverse proxy",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/varnish@5.2.1-1ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "varnish",
+      "version": "5.2.1-1ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/varnish@5.2.1-1ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "state of the art, high-performance web accelerator",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/certbot@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "certbot",
+      "version": "0.31.0-1+ubuntu18.04.1+certbot+1",
+      "purl": "pkg:deb/ubuntu/certbot@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+      "description": "automatically configure HTTPS using Let's Encrypt",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/python3-certbot-apache@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "python3-certbot-apache",
+      "version": "0.31.0-1+ubuntu18.04.1+certbot+1",
+      "purl": "pkg:deb/ubuntu/python3-certbot-apache@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+      "description": "Apache plugin for Certbot",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/python3-certbot-nginx@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+      "type": "library",
+      "name": "python3-certbot-nginx",
+      "version": "0.31.0-1+ubuntu18.04.1+certbot+1",
+      "purl": "pkg:deb/ubuntu/python3-certbot-nginx@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+      "description": "Nginx plugin for Certbot",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/prometheus@2.1.0+ds-3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "prometheus",
+      "version": "2.1.0+ds-3",
+      "purl": "pkg:deb/ubuntu/prometheus@2.1.0+ds-3?arch=amd64&distro=bionic",
+      "description": "monitoring system and time series database",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/grafana@5.0.4+dfsg-2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "grafana",
+      "version": "5.0.4+dfsg-2",
+      "purl": "pkg:deb/ubuntu/grafana@5.0.4+dfsg-2?arch=amd64&distro=bionic",
+      "description": "feature rich metrics dashboard and graph editor",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/elasticsearch-curator@5.4.1-1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "elasticsearch-curator",
+      "version": "5.4.1-1",
+      "purl": "pkg:deb/ubuntu/elasticsearch-curator@5.4.1-1?arch=amd64&distro=bionic",
+      "description": "curator helps manage Elasticsearch indices",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/logstash@1:6.8.23-1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "logstash",
+      "version": "1:6.8.23-1",
+      "purl": "pkg:deb/ubuntu/logstash@1:6.8.23-1?arch=amd64&distro=bionic",
+      "description": "server-side data processing pipeline",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/kibana@6.8.23?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "kibana",
+      "version": "6.8.23",
+      "purl": "pkg:deb/ubuntu/kibana@6.8.23?arch=amd64&distro=bionic",
+      "description": "analytics and visualization platform",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/vsftpd@3.0.3-9build1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "vsftpd",
+      "version": "3.0.3-9build1",
+      "purl": "pkg:deb/ubuntu/vsftpd@3.0.3-9build1?arch=amd64&distro=bionic",
+      "description": "lightweight, efficient FTP server written for security",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/proftpd-basic@1.3.5e-1build1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "proftpd-basic",
+      "version": "1.3.5e-1build1",
+      "purl": "pkg:deb/ubuntu/proftpd-basic@1.3.5e-1build1?arch=amd64&distro=bionic",
+      "description": "Versatile, virtual-hosting FTP daemon - binaries",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/postfix@3.3.0-1ubuntu0.4?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "postfix",
+      "version": "3.3.0-1ubuntu0.4",
+      "purl": "pkg:deb/ubuntu/postfix@3.3.0-1ubuntu0.4?arch=amd64&distro=bionic",
+      "description": "High-performance mail transport agent",
+      "licenses": [
+        {
+          "license": {
+            "id": "IPL-1.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/dovecot-core@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "dovecot-core",
+      "version": "1:2.2.33.2-1ubuntu4.8",
+      "purl": "pkg:deb/ubuntu/dovecot-core@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+      "description": "secure POP3/IMAP server - core files",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/dovecot-imapd@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "dovecot-imapd",
+      "version": "1:2.2.33.2-1ubuntu4.8",
+      "purl": "pkg:deb/ubuntu/dovecot-imapd@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+      "description": "secure POP3/IMAP server - IMAP daemon",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/dovecot-pop3d@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "dovecot-pop3d",
+      "version": "1:2.2.33.2-1ubuntu4.8",
+      "purl": "pkg:deb/ubuntu/dovecot-pop3d@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+      "description": "secure POP3/IMAP server - POP3 daemon",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/bind9@1:9.11.3+dfsg-1ubuntu1.19?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "bind9",
+      "version": "1:9.11.3+dfsg-1ubuntu1.19",
+      "purl": "pkg:deb/ubuntu/bind9@1:9.11.3+dfsg-1ubuntu1.19?arch=amd64&distro=bionic",
+      "description": "Internet Domain Name Server",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ],
+      "cpe": "cpe:2.3:a:isc:bind:9.11.3:*:*:*:*:*:*:*"
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/dnsmasq@2.79-1ubuntu0.7?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "dnsmasq",
+      "version": "2.79-1ubuntu0.7",
+      "purl": "pkg:deb/ubuntu/dnsmasq@2.79-1ubuntu0.7?arch=amd64&distro=bionic",
+      "description": "Small caching DNS proxy and DHCP/TFTP server",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/iptables@1.6.1-2ubuntu2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "iptables",
+      "version": "1.6.1-2ubuntu2",
+      "purl": "pkg:deb/ubuntu/iptables@1.6.1-2ubuntu2?arch=amd64&distro=bionic",
+      "description": "administration tools for packet filtering and NAT",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/ufw@0.36-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "ufw",
+      "version": "0.36-0ubuntu0.18.04.2",
+      "purl": "pkg:deb/ubuntu/ufw@0.36-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+      "description": "program for managing a Netfilter firewall",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/fail2ban@0.10.2-2.1ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "fail2ban",
+      "version": "0.10.2-2.1ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/fail2ban@0.10.2-2.1ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "ban hosts that cause multiple authentication errors",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/apparmor@2.12-4ubuntu5.3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "apparmor",
+      "version": "2.12-4ubuntu5.3",
+      "purl": "pkg:deb/ubuntu/apparmor@2.12-4ubuntu5.3?arch=amd64&distro=bionic",
+      "description": "user-space parser utility for AppArmor",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/rsnapshot@1.4.2-1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "rsnapshot",
+      "version": "1.4.2-1",
+      "purl": "pkg:deb/ubuntu/rsnapshot@1.4.2-1?arch=amd64&distro=bionic",
+      "description": "local and remote filesystem snapshot utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/borgbackup@1.1.5-1ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "borgbackup",
+      "version": "1.1.5-1ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/borgbackup@1.1.5-1ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "deduplicating and compressing backup program",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/nagios-plugins@2.2.1-1ubuntu1.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "nagios-plugins",
+      "version": "2.2.1-1ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/nagios-plugins@2.2.1-1ubuntu1.1?arch=amd64&distro=bionic",
+      "description": "Plugins for nagios compatible monitoring systems",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/munin-node@2.0.37-1ubuntu0.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "munin-node",
+      "version": "2.0.37-1ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/munin-node@2.0.37-1ubuntu0.1?arch=amd64&distro=bionic",
+      "description": "network-wide graphing framework (node)",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/supervisor@3.3.1-1.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "supervisor",
+      "version": "3.3.1-1.1",
+      "purl": "pkg:deb/ubuntu/supervisor@3.3.1-1.1?arch=amd64&distro=bionic",
+      "description": "System for controlling process state",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/tmux@2.6-3ubuntu0.3?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "tmux",
+      "version": "2.6-3ubuntu0.3",
+      "purl": "pkg:deb/ubuntu/tmux@2.6-3ubuntu0.3?arch=amd64&distro=bionic",
+      "description": "terminal multiplexer",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/screen@4.6.2-1ubuntu1.1?arch=amd64&distro=bionic",
+      "type": "application",
+      "name": "screen",
+      "version": "4.6.2-1ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/screen@4.6.2-1ubuntu1.1?arch=amd64&distro=bionic",
+      "description": "terminal multiplexer with VT100/ANSI terminal emulation",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "package:distro",
+          "value": "ubuntu-bionic"
+        },
+        {
+          "name": "package:arch",
+          "value": "amd64"
+        },
+        {
+          "name": "package:profile",
+          "value": "server"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:deb/ubuntu/ubuntu-release@18.04?arch=amd64&profile=server",
+      "dependsOn": [
+        "pkg:deb/ubuntu/apache2@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/apache2-bin@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/apache2-data@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/apache2-utils@2.4.29-1ubuntu4.27?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/nginx@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/nginx-common@1.14.0-0ubuntu1.11?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libapache2-mod-php7.2@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libapache2-mod-security2@2.9.2-1ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libapache2-mod-wsgi-py3@4.5.17-1ubuntu1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-cli@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-common@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-fpm@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-mysql@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-pgsql@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-sqlite3@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-curl@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-gd@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-mbstring@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-xml@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-zip@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-json@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-opcache@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/php7.2-readline@7.2.24-0ubuntu0.18.04.17?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/mysql-server-5.7@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/mysql-client-5.7@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/mysql-common@5.8+1.0.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libmysqlclient20@5.7.44-0ubuntu0.18.04.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/postgresql-10@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/postgresql-client-10@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/postgresql-common@190ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libpq5@10.23-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/redis-server@5:4.0.9-1ubuntu0.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/redis-tools@5:4.0.9-1ubuntu0.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/memcached@1.5.6-0ubuntu1.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/libmemcached11@1.0.18-4.2ubuntu0.18.04.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/mongodb@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/mongodb-server@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/mongodb-clients@1:3.6.3-0ubuntu1.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/elasticsearch@6.8.23?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/rabbitmq-server@3.6.10-1ubuntu0.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/haproxy@1.8.8-1ubuntu0.13?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/varnish@5.2.1-1ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/certbot@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/python3-certbot-apache@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/python3-certbot-nginx@0.31.0-1+ubuntu18.04.1+certbot+1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/prometheus@2.1.0+ds-3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/grafana@5.0.4+dfsg-2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/elasticsearch-curator@5.4.1-1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/logstash@1:6.8.23-1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/kibana@6.8.23?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/vsftpd@3.0.3-9build1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/proftpd-basic@1.3.5e-1build1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/postfix@3.3.0-1ubuntu0.4?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/dovecot-core@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/dovecot-imapd@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/dovecot-pop3d@1:2.2.33.2-1ubuntu4.8?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/bind9@1:9.11.3+dfsg-1ubuntu1.19?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/dnsmasq@2.79-1ubuntu0.7?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/iptables@1.6.1-2ubuntu2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/ufw@0.36-0ubuntu0.18.04.2?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/fail2ban@0.10.2-2.1ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/apparmor@2.12-4ubuntu5.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/rsnapshot@1.4.2-1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/borgbackup@1.1.5-1ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/nagios-plugins@2.2.1-1ubuntu1.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/munin-node@2.0.37-1ubuntu0.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/supervisor@3.3.1-1.1?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/tmux@2.6-3ubuntu0.3?arch=amd64&distro=bionic",
+        "pkg:deb/ubuntu/screen@4.6.2-1ubuntu1.1?arch=amd64&distro=bionic"
+      ]
+    }
+  ]
+}

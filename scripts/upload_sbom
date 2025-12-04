@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+"""Upload a CycloneDX SBOM to the Dependency-Track instance used by the tests."""
+
+from __future__ import annotations
+
+import argparse
+import os
+import sys
+from pathlib import Path
+
+try:
+    from dotenv import load_dotenv  # type: ignore
+except ModuleNotFoundError:  # pragma: no cover - fallback for environments without python-dotenv
+    def load_dotenv(path: Path | str) -> bool:
+        path = Path(path)
+        if not path.exists():
+            return False
+        for raw_line in path.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+            key, sep, value = line.partition("=")
+            if not sep:
+                continue
+            key = key.strip()
+            value = value.strip().strip('"').strip("'")
+            os.environ.setdefault(key, value)
+        return True
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT))
+
+from owasp_dt.api.bom import upload_bom
+from owasp_dt.models import UploadBomBody
+from test import api, base_dir, project_name as default_project_name
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Upload a SBOM to the Dependency-Track instance configured in test/test.env",
+    )
+    parser.add_argument(
+        "sbom",
+        type=Path,
+        help="Path to the CycloneDX SBOM file to upload",
+    )
+    parser.add_argument(
+        "--project-name",
+        default=default_project_name,
+        help="Override the project name (defaults to the test suite project)",
+    )
+    parser.add_argument(
+        "--no-auto-create",
+        action="store_true",
+        help="Disable automatic project creation if it does not exist",
+    )
+    return parser.parse_args()
+
+
+def load_env() -> None:
+    env_path = base_dir / "test.env"
+    if env_path.exists():
+        load_dotenv(env_path)
+
+
+def read_sbom(path: Path) -> str:
+    if not path.is_file():
+        raise SystemExit(f"SBOM file not found: {path}")
+    return path.read_text(encoding="utf-8")
+
+
+def run() -> int:
+    args = parse_args()
+    load_env()
+    client = api.create_client_from_env()
+    sbom_content = read_sbom(args.sbom)
+
+    body = UploadBomBody(
+        project_name=args.project_name,
+        auto_create=not args.no_auto_create,
+        bom=sbom_content,
+    )
+
+    response = upload_bom.sync_detailed(client=client, body=body)
+    if response.status_code not in (200, 201):
+        sys.stderr.write(
+            f"Upload failed with status {response.status_code}: {response.content!r}\n",
+        )
+        return 1
+
+    token = response.parsed.token if response.parsed else None
+    if token:
+        print(f"Upload accepted. Token: {token}")
+    else:
+        print("Upload accepted.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(run())
+
